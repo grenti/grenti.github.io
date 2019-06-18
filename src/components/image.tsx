@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { graphql, StaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+import React, { FunctionComponent } from 'react'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,7 +13,7 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Image = () => (
+const Image: FunctionComponent = () => (
   <StaticQuery
     query={graphql`
       query {

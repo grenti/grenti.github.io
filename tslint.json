@@ -1,0 +1,12 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "rules": {
+    "prettier": true,
+    "semicolon": false,
+    "trailing-comma": true,
+    "quotemark": [true, "single", "jsx-double"],
+    "jsx-no-multiline-js": false,
+    "jsx-no-lambda": false
+  }
+}

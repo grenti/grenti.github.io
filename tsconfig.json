@@ -1,0 +1,23 @@
+{
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"],
+  "compileOnSave": true,
+  "compilerOptions": {
+    // "outDir": "./dist/",
+    "jsx": "preserve",
+    "module": "commonjs",
+    "sourceMap": true,
+    "target": "esnext",
+    "lib": ["dom", "esnext"],
+    "strict": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}
