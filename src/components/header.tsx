@@ -1,32 +1,17 @@
 import { Link } from 'gatsby'
 import React, { FunctionComponent } from 'react'
 
+import styles from './Header.module.scss'
+
 interface IHeaderProps {
   siteTitle: string
 }
 
 const Header: FunctionComponent<IHeaderProps> = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+  <header className={styles.Header}>
+    <div className={styles.Container}>
+      <h1 className={styles.Heading}>
+        <Link to="/" className={styles.Link}>
           {siteTitle}
         </Link>
       </h1>

@@ -1,6 +1,8 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'grenti',
     description:
       'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
     author: '@gatsbyjs',
@@ -56,8 +58,11 @@ module.exports = {
       resolve: 'gatsby-plugin-scss-typescript',
       options: {
         cssLoaderOptions: {
-          importLoaders: 1,
+          importLoaders: 2,
           localIdentName: '[name]_[local]___[hash:base64:5]_[emoji:1]',
+        },
+        sassLoaderOptions: {
+          includePaths: [path.resolve(__dirname, './src/**/*.scss')],
         },
       },
     },

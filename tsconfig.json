@@ -4,7 +4,7 @@
   "compileOnSave": true,
   "compilerOptions": {
     // "outDir": "./dist/",
-    "jsx": "preserve",
+    "jsx": "react",
     "module": "commonjs",
     "sourceMap": true,
     "target": "esnext",

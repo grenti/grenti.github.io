@@ -1,1 +1,1 @@
-declare module 'typography-theme-sutro'
+declare module 'typography-theme-sutro' {}
