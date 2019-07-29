@@ -8,7 +8,7 @@ interface IMenuProps {
   links: IMenuItemProps[]
 }
 
-function Menu(props: IMenuProps) {
+export default function Menu(props: IMenuProps) {
   const { links } = props
   return (
     <ul className={styles.Menu}>
@@ -18,5 +18,3 @@ function Menu(props: IMenuProps) {
     </ul>
   )
 }
-
-export default Menu

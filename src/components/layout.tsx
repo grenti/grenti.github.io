@@ -8,24 +8,11 @@
 import { graphql, StaticQuery } from 'gatsby'
 import React, { Fragment, FunctionComponent, ReactNode } from 'react'
 
-import Menu from '../components/Navigation/Menu'
-
 import Header from './Header'
 
 import styles from './Layout.module.scss'
 
 import './global.css'
-
-const mainMenuLinks = [
-  {
-    text: 'Home',
-    to: '/',
-  },
-  {
-    text: 'History',
-    to: '/history',
-  },
-]
 
 interface IRenderProp {
   data: {
@@ -42,9 +29,6 @@ function RenderLayout({ data, children }: IRenderProp) {
   return (
     <Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <nav className={styles.NavMenu}>
-        <Menu links={mainMenuLinks} />
-      </nav>
       <div className={styles.Container}>
         <main>{children}</main>
         <footer>
